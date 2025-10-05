@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Sabor - Pastelería Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🧁</span>
+                <span class="logo-text">Dulce Sabor</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#menu" class="nav-link">Menú</a></li>
+                <li><a href="#acerca" class="nav-link">Acerca de</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Bienvenidos a</span>
+                <h1 class="hero-title">Dulce Sabor</h1>
+                <p class="hero-description">Endulzando momentos especiales desde el corazón</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        <span>Ver Menú</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero-features">
+                <div class="feature-card">
+                    <div class="feature-icon">🎂</div>
+                    <div class="feature-text">
+                        <h3>100% Artesanal</h3>
+                        <p>Hecho con amor</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <div class="feature-text">
+                        <h3>Calidad Premium</h3>
+                        <p>Ingredientes selectos</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <div class="feature-text">
+                        <h3>Entrega Rápida</h3>
+                        <p>A domicilio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Descubre</span>
+                <h2 class="section-title">Nuestro Menú</h2>
+                <p class="section-description">Cada postre es una obra de arte hecha con pasión</p>
+            </div>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="pasteles">Pasteles</button>
+                <button class="filter-btn" data-filter="postres">Postres</button>
+                <button class="filter-btn" data-filter="galletas">Galletas</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item" data-category="pasteles">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop" alt="Pastel de Chocolate">
+                        <div class="menu-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-category">Pasteles</div>
+                        <h3>Pastel de Chocolate</h3>
+                        <p>Delicioso pastel con capas de chocolate belga y crema de mantequilla</p>
+                        <div class="menu-footer">
+                            <span class="price">$350 <small>MXN</small></span>
+                            <button class="add-cart">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=400&fit=crop" alt="Cupcakes">
+                        <div class="menu-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-category">Postres</div>
+                        <h3>Cupcakes Gourmet</h3>
+                        <p>Variedad de cupcakes decorados con betún de colores y sabores únicos</p>
+                        <div class="menu-footer">
+                            <span class="price">$45 <small>MXN c/u</small></span>
+                            <button class="add-cart">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&h=400&fit=crop" alt="Cheesecake">
+                        <div class="menu-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-category">Postres</div>
+                        <h3>Cheesecake de Frutos Rojos</h3>
+                        <p>Suave cheesecake con mermelada casera de frutos rojos</p>
+                        <div class="menu-footer">
+                            <span class="price">$280 <small>MXN</small></span>
+                            <button class="add-cart">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="galletas">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=500&h=400&fit=crop" alt="Galletas">
+                        <div class="menu-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-category">Galletas</div>
+                        <h3>Galletas Artesanales</h3>
+                        <p>Galletas recién horneadas con chispas de chocolate y nueces</p>
+                        <div class="menu-footer">
+                            <span class="price">$120 <small>MXN/doc</small></span>
+                            <button class="add-cart">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1557308536-ee471ef2c390?w=500&h=400&fit=crop" alt="Tarta">
+                        <div class="menu-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-category">Postres</div>
+                        <h3>Tarta de Limón</h3>
+                        <p>Base crujiente con relleno cremoso de limón y merengue suave</p>
+                        <div class="menu-footer">
+                            <span class="price">$260 <small>MXN</small></span>
+                            <button class="add-cart">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=500&h=400&fit=crop" alt="Macarons">
+                        <div class="menu-overlay">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-category">Postres</div>
+                        <h3>Macarons Franceses</h3>
+                        <p>Delicados macarons en múltiples sabores y colores vibrantes</p>
+                        <div class="menu-footer">
+                            <span class="price">$35 <small>MXN c/u</small></span>
+                            <button class="add-cart">Ordenar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acerca de Nosotros -->
+    <section id="acerca">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-images">
+                    <div class="about-image-main">
+                        <img src="https://images.unsplash.com/photo-1556910110-a5a63dfd393c?w=600&h=800&fit=crop" alt="Nuestra Pastelería">
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Años de experiencia</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Productos únicos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Clientes felices</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-subtitle">Nuestra Historia</span>
+                    <h2 class="section-title">Acerca de Nosotros</h2>
+                    <p>En <strong>Dulce Sabor</strong>, creemos que cada postre cuenta una historia. Desde 2015, nos hemos dedicado a crear dulces momentos que endulzan la vida de nuestros clientes.</p>
+                    <p>Utilizamos solo ingredientes de la más alta calidad, recetas tradicionales y un toque de innovación para crear postres que no solo saben increíble, sino que también lucen espectaculares.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Ingredientes 100% naturales</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Recetas tradicionales</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Atención personalizada</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Entrega garantizada</span>
+                        </div>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Hablemos</span>
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-description">Estamos aquí para hacer realidad tus sueños más dulces</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>¿Tienes alguna pregunta? Nos encantaría escucharte.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <h4>Dirección</h4>
+                            <p>Av. Independencia 123, Centro<br>Oaxaca de Juárez, Oaxaca</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <h4>Teléfono</h4>
+                            <p>(951) 123-4567<br>(951) 765-4321</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>info@dulcesabor.com<br>pedidos@dulcesabor.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-text">
+                            <h4>Horario</h4>
+                            <p>Lun - Sáb: 9:00 AM - 8:00 PM<br>Domingo: 10:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="pedido">Realizar un pedido</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="evento">Evento especial</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Enviar Mensaje</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🧁</span>
+                        <span class="logo-text">Dulce Sabor</span>
+                    </div>
+                    <p>Endulzando momentos especiales desde 2015</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#acerca">Acerca de</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dulce Sabor. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top">↑</button>
+
+    <script>
+// ========== NAVEGACIÓN ========== 
+const navbar = document.getElementById('navbar');
+const navLinks = document.querySelectorAll('.nav-link');
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+const scrollTopBtn = document.getElementById('scrollTop');
+
+// Efecto de scroll en navbar
+let ticking = false;
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                scrollTopBtn.classList.add('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                scrollTopBtn.classList.remove('visible');
+            }
+
+            // Actualizar link activo basado en la sección visible
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - navbar.offsetHeight - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+
+// Menu toggle para móviles
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Cerrar menú al hacer clic en un enlace
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// Smooth scroll mejorado
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const offsetTop = target.offsetTop - 80;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Scroll to top
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// ========== FILTROS DEL MENÚ ==========
+const filterBtns = document.querySelectorAll('.filter-btn');
+const menuItems = document.querySelectorAll('.menu-item');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        menuItems.forEach((item, index) => {
+            item.style.transition = 'none';
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+
+            setTimeout(() => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.transition = 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, index * 50);
+                } else {
+                    item.style.display = 'none';
+                }
+            }, 200);
+        });
+    });
+});
+
+// ========== BOTONES DE MENÚ ==========
+const quickViewBtns = document.querySelectorAll('.quick-view');
+const addCartBtns = document.querySelectorAll('.add-cart');
+
+quickViewBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const menuItem = btn.closest('.menu-item');
+        const productName = menuItem.querySelector('h3').textContent;
+        
+        btn.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            btn.style.transform = 'scale(1)';
+        }, 150);
+
+        alert(`Vista rápida de: ${productName}\n\n¡Próximamente más detalles!`);
+    });
+});
+
+addCartBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const menuItem = btn.closest('.menu-item');
+        const productName = menuItem.querySelector('h3').textContent;
+        const productPrice = menuItem.querySelector('.price').textContent;
+        
+        const originalText = btn.textContent;
+        btn.textContent = '✓ Agregado';
+        btn.style.background = '#4caf50';
+        
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+        }, 2000);
+
+        console.log(`Producto agregado: ${productName} - ${productPrice}`);
+    });
+});
+
+// ========== FORMULARIO DE CONTACTO ==========
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const asunto = document.getElementById('asunto').value;
+    const mensaje = document.getElementById('mensaje').value;
+    
+    if (!nombre || !email || !telefono || !asunto || !mensaje) {
+        alert('Por favor, completa todos los campos');
+        return;
+    }
+
+    const submitBtn = contactForm.querySelector('.btn-primary');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span>Enviando...</span>';
+    submitBtn.style.background = 'var(--secondary-color)';
+    submitBtn.disabled = true;
+
+    setTimeout(() => {
+        submitBtn.innerHTML = '<span>✓ Enviado</span>';
+        submitBtn.style.background = '#4caf50';
+        
+        setTimeout(() => {
+            alert(`¡Gracias ${nombre}!\n\nTu mensaje ha sido enviado exitosamente.\nNos pondremos en contacto contigo pronto.`);
+            contactForm.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+        }, 1000);
+    }, 2000);
+});
+
+// ========== ANIMACIONES AL HACER SCROLL ==========
+const observerOptions = {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const animatedElements = new Set();
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            animatedElements.add(entry.target);
+            
+            if (entry.target.classList.contains('stat-card')) {
+                animateCounter(entry.target);
+            }
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.stat-card, .info-item, .about-feature').forEach(item => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(30px)';
+    item.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+    observer.observe(item);
+});
+
+// ========== ANIMACIÓN DE CONTADORES MEJORADA ==========
+const animatedCounters = new Set();
+
+function animateCounter(element) {
+    if (animatedCounters.has(element)) return;
+    animatedCounters.add(element);
+    
+    const target = element.querySelector('.stat-number');
+    if (!target) return;
+    
+    const text = target.textContent;
+    const finalNumber = parseInt(text.replace(/\D/g, ''));
+    const hasPlusSign = text.includes('+');
+    
+    const duration = 1500;
+    const fps = 60;
+    const totalFrames = (duration / 1000) * fps;
+    const increment = finalNumber / totalFrames;
+    let current = 0;
+    let frame = 0;
+    
+    const updateCounter = () => {
+        frame++;
+        current = Math.min(current + increment, finalNumber);
+        
+        if (frame < totalFrames) {
+            target.textContent = Math.floor(current) + (hasPlusSign ? '+' : '');
+            requestAnimationFrame(updateCounter);
+        } else {
+            target.textContent = finalNumber + (hasPlusSign ? '+' : '');
+        }
+    };
+    
+    updateCounter();
+}
+
+// ========== EFECTOS ADICIONALES ==========
+let lastScrollY = window.scrollY;
+let heroParallaxTicking = false;
+
+window.addEventListener('scroll', () => {
+    lastScrollY = window.scrollY;
+    
+    if (!heroParallaxTicking) {
+        window.requestAnimationFrame(() => {
+            const hero = document.querySelector('.hero');
+            if (hero && lastScrollY < window.innerHeight) {
+                hero.style.transform = `translateY(${lastScrollY * 0.4}px)`;
+            }
+            heroParallaxTicking = false;
+        });
+        heroParallaxTicking = true;
+    }
+});
+
+menuItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        this.style.zIndex = '10';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+        this.style.zIndex = '1';
+    });
+});
+
+console.log('%c🧁 Bienvenido a Dulce Sabor 🧁', 'font-size: 20px; color: #d4a574; font-weight: bold;');
+console.log('%c¡Gracias por visitar nuestra página!', 'font-size: 14px; color: #5a4a42;');
+
+// Inicializar animaciones de items del menú
+window.addEventListener('load', () => {
+    menuItems.forEach(item => {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+    });
+});
+    </script>
+</body>
+</html>
